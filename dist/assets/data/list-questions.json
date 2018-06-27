@@ -1,0 +1,855 @@
+[{
+    "id": "1",
+    "type":"icnd1",
+    "numberOfAnswers": 3,
+    "name": "Which three statements are true about the operation of a full-duplex Ethernet network?",
+    "explanation": "Half-duplex Ethernet is defined in the original 802.3 Ethernet and Cisco says you only use one wire pair with a digital signal running in both directions on the wire. It also uses the CSMA/CD protocol to help prevent collisions and to permit retransmitting if a collision does occur. If a hub is attached to a switch, it must operate in half-duplex mode because the end stations must be able to detect collisions. Half-duplex Ethernet—typically 10BaseT—is only about 30 to 40 percent efficient as Cisco sees it, because a large 10BaseT network will usually only give you 3- to 4Mbps—at most. Full-duplex Ethernet uses two pairs of wires, instead of one wire pair like half duplex. Also, full duplex uses a point-to-point connection between the transmitter of the transmitting device and the receiver of the receiving device, which means that with full-duplex data transfer, you get a faster data transfer compared to half duplex. And because the transmitted data is sent on a different set of wires than the received data, no collisions occur. The reason you don’t need to worry about collisions is because now Full-duplex Ethernet is like a freeway with multiple lanes instead of the single-lane road provided by half duplex. Full-duplex Ethernet is supposed to offer 100 percent efficiency in both directions; this means you can get 20Mbps with a 10Mbps Ethernet running full duplex, or 200Mbps for FastEthernet.",
+    "choices": [{
+        "answear": "There are no collisions in full-duplex mode.",
+        "istrue": true
+      },
+      {
+        "answear": "A dedicated switch port is required for each full-duplex node.",
+        "istrue": true
+      },
+      {
+        "answear": "Ethernet hub ports are preconfigured for full-duplex mod.",
+        "istrue": false
+      },
+      {
+
+        "answear": "In a full-duplex environment, the host network card must check for the availability of the network media before transmitting.",
+        "istrue": false
+      },
+      {
+        "answear": "The host network card and the switch port must be capable of operating in full-duplex mode.",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which OSI layer header contains the address of a destination host that is on another network?",
+    "explanation": "Only network address contains this information. To transmit the packets the sender uses network address and datalink address. But the layer 2 address represents just the address of the next hop device on the way to the sender. It is changed on each hop. Network address remains the same. ",
+    "choices": [{
+        "answear": "application",
+        "istrue": false
+      },
+      {
+        "answear": "session ",
+        "istrue": false
+      },
+      {
+        "answear": "transport ",
+        "istrue": false
+      },
+      {
+        "answear": "network ",
+        "istrue": true
+      },
+      {
+        "answear": "data link",
+        "istrue": false
+      },
+      {
+        "answear": "physical ",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which layer of the TCP/IP stack combines the OSI model physical and data link layers?",
+    "explanation": "The Internet Protocol Suite, TCP/IP, is a suite of protocols used for communication over the internet. The TCP/ IP model was created after the OSI 7 layer model for two major reasons. First, the foundation of the Internet was built using the TCP/IP suite and through the spread of the World Wide Web and Internet, TCP/IP has been preferred. Second, a project researched by the Department of Defense (DOD) consisted of creating the TCP/IP protocols. The DODs goal was to bring international standards which could not be met by the OSI model. Since the DOD was the largest software consumer and they preferred the TCP/IP suite, most vendors used this model rather than the OSI. Below is a side by side comparison of the TCP/IP and OSI models",
+    "choices": [{
+        "answear": "Internet layer .",
+        "istrue": false
+      },
+      {
+        "answear": " transport layer ",
+        "istrue": false
+      },
+      {
+        "answear": " application layer ",
+        "istrue": false
+      },
+      {
+        "answear": " network access layer ",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which protocol uses a connection-oriented service to deliver files between end systems?",
+    "explanation": "TCP is an example of a connection-oriented protocol. It requires a logical connection to be established between the two processes before data is exchanged. The connection must be maintained during the entire time that communication is taking place, then released afterwards. The process is much like a telephone call, where a virtual circuit is established--the caller must know the person`s telephone number and the phone must be answered--before the message can be delivered. TCP/IP is also a connection-oriented transport with orderly release. With orderly release, any data remaining in the buffer is sent before the connection is terminated. The release is accomplished in a three-way handshake between client and server processes. The connection-oriented protocols in the OSI protocol suite, on the other hand, do not support orderly release. Applications perform any handshake necessary for ensuring orderly release. Examples of services that use connection-oriented transport services are telnet, rlogin, and ftp",
+    "choices": [{
+        "answear": "TFTP ",
+        "istrue": false
+      },
+      {
+        "answear": "DNS  ",
+        "istrue": false
+      },
+      {
+        "answear": " FTP  ",
+        "istrue": true
+      },
+      {
+        "answear": " SNMP  ",
+        "istrue": false
+      },
+      {
+        "answear": " RIP   ",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "If the hubs in the graphic were replaced by switches, what would be virtually eliminated?",
+    "explanation": "Modern wired networks use a network switch to eliminate collisions. By connecting each device directly to a port on the switch, either each port on a switch becomes its own collision domain (in the case of half duplex links) or the possibility of collisions is eliminated entirely in the case of full duplex links.",
+    "choices": [{
+        "answear": "broadcast domains",
+        "istrue": false
+      },
+      {
+        "answear": "repeater domains",
+        "istrue": false
+      },
+      {
+        "answear": "Ethernet collisions",
+        "istrue": true
+      },
+      {
+        "answear": "signal amplification",
+        "istrue": false
+      },
+      {
+        "answear": "Ethernet broadcasts",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "If host A sends an IP packet to host B, what will the source physical address be in the frame when it reaches host B?",
+    "explanation": "When packets transfer from one host to another across a routed segment, the source IP address always remains the same source IP address, and the source physical (MAC) address will be the existing router’s interface address. Similarly, the destination IP address always remains the same and the destination physical (MAC) address is the destination router’s interface address.",
+    "choices": [{
+        "answear": "10.168.10.99",
+        "istrue": false
+      },
+      {
+        "answear": "10.168.11.88",
+        "istrue": false
+      },
+      {
+        "answear": "A1:A1:A1:A1:A1:A1",
+        "istrue": false
+      },
+      {
+        "answear": "B2:B2:B2:B2:B2:B2",
+        "istrue": false
+      },
+      {
+        "answear": "C3:C3:C3:C3:C3:C3",
+        "istrue": true
+      },
+      {
+        "answear": "D4:D4:D4:D4:D4:D4",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "HostX is transferring a file to the FTP server. Point A represents the frame as it goes toward the Toronto router. What will the Layer 2 destination address be at this point?",
+    "explanation": "For packets destined to a host on another IP network, the destination MAC address will be the LAN interface of the router. Since the FTP server lies on a different network, the host will know to send the frame to its default gateway, which is Toronto.",
+    "choices": [{
+        "answear": "abcd.1123.0045",
+        "istrue": false
+      },
+      {
+        "answear": "192.168.7.17",
+        "istrue": false
+      },
+      {
+        "answear": "aabb.5555.2222",
+        "istrue": false
+      },
+      {
+        "answear": "192.168.1.1",
+        "istrue": false
+      },
+      {
+        "answear": "abcd.2246.0035",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which network device functions only at Layer 1 of the OSI model?",
+    "explanation": "Most hubs are amplifying the electrical signal; therefore, they are really repeaters with several ports. Hubs and repeaters are Layer 1 (physical layer) devices.",
+    "choices": [{
+        "answear": "Option A",
+        "istrue": false
+      },
+      {
+        "answear": "Option B",
+        "istrue": true
+      },
+      {
+        "answear": "Option C",
+        "istrue": false
+      },
+      {
+        "answear": "Option D",
+        "istrue": false
+      },
+      {
+        "answear": "Option E",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "The host in Kiev sends a request for an HTML document to the server in Minsk. What will be the source IP address of the packet as it leaves the Kiev router?",
+    "explanation": "Although the source and destination MAC address will change as a packet traverses a network, the source and destination IP address will not unless network address translation (NAT) is being done, which is not the case here.",
+    "choices": [{
+        "answear": "10.1.0.1",
+        "istrue": false
+      },
+      {
+        "answear": "10.1.0.5",
+        "istrue": false
+      },
+      {
+        "answear": "10.1.0.6",
+        "istrue": false
+      },
+      {
+        "answear": "10.1.0.14",
+        "istrue": false
+      },
+      {
+        "answear": "10.1.1.16",
+        "istrue": true
+      },
+      {
+        "answear": "10.1.2.8",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "type":"icnd1",
+    "numberOfAnswers": 3,
+    "name": "As packets travel from Mary to Robert, which three devices will use the destination MAC address of the packet to determine a forwarding path?",
+    "explanation": "Switches use the destination MAC address information for forwarding traffic, while routers use the destination IP address information. Local Area Networks employ Layer 2 Switches and Bridges to forward and filter network traffic. Switches and Bridges operate at the Data Link Layer of the Open System Interconnect Model (OSI). Since Switches and Bridges operate at the Layer 2 they operate more intelligently than hubs, which work at Layer 1 (Physical Layer) of the OSI. Because the switches and bridges are able to listen to the traffic on the wire to examine the source and destination MAC address. Being able to listen to the traffic also allows the switches and bridges to compile a MAC address table to better filter and forward network traffic.To accomplish the above functions switches and bridges carry out the following tasks: MAC address learning by a switch or a bridge is accomplished by the same method. The switch or bridge listens to each device connected to each of its ports and scan the incoming frame for the source MAC address. This creates a MAC address to port map that is cataloged in the switches/bridge MAC database. Another name for the MAC address table is content addressable memory or CAM table. When a switch or bridge is listening to the network traffic, it receives each frame and compares it to the MAC address table. By checking the MAC table the switch/ bridge are able o determine which port the frame came in on. If the frame is on the MAC table the frame is filtered or transmitted on only that port. If the switch determines that the frame is not on the MAC table, the frame is forwarded out to all ports except the incoming port. ",
+    "choices": [{
+        "answear": "Hub1",
+        "istrue": false
+      },
+      {
+        "answear": "Switch1",
+        "istrue": true
+      },
+      {
+        "answear": "Router1",
+        "istrue": false
+      },
+      {
+        "answear": "Switch2",
+        "istrue": true
+      },
+      {
+        "answear": "Router2",
+        "istrue": false
+      },
+      {
+        "answear": "Switch3",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Mary is sending an instant message to Robert. The message will be broken into a series of packets that will traverse all network devices. What addresses will populate these packets as they are forwarded from Router1 to Router2?",
+    "explanation": "The Source and Destination IP address is not going to change. Host 1 IP address will stay as being the source IP and the Host 2 IP address will stay the destination IP address. Those two are not going to change. For the MAC address it is going to change each time it goes from one hope to another. (Except switches... they dont change anything) Frame leaving HOST 1 is going to have a source MAC of Host 1 and a destination MAC of Router 1. Router 1 is going to strip that info off and then will make the source MAC address of Router1 exiting interface, and making Router2 interface as the destination MAC address. Then the same will happen... Router2 is going to change the source/destination info to the source MAC being the Router2 interface that it is going out, and the destination will be Host2`s MAC address.",
+    "choices": [{
+        "answear": "0000.00a1.2222 / 0000.00a1.3333 / 10.1.2.2 / 10.1.3.3",
+        "istrue": false
+      },
+      {
+        "answear": "0000.000c.0123 / 0000.000c.0124 / 10.1.2.2 / 10.1.3.3",
+        "istrue": true
+      },
+      {
+        "answear": "0000.000c.0123 / 0000.000c.0124 / 10.1.1.253 / 10.1.1.254",
+        "istrue": false
+      },
+      {
+        "answear": "0000.00a1.2222 / 0000.00a1.3333 / 10.1.1.253 / 10.1.1.254",
+        "istrue": false
+      },
+      {
+        "answear": "0000.000c.0456 / 0000.000c.0567 / 10.1.2.2 / 10.1.3.3",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "A network device needs to be installed in the place of the icon labeled Network Device to accommodate a leased line attachment to the Internet. Which network device and interface configuration meets the minimum requirements for this installation?",
+    "explanation": "Only a router can terminate a leased line attachment access circuit, and only a router can connect two different IP networks. Here, we will need a router with two interfaces, one serial connection for the line attachment and one Ethernet interface to connect to the switch on the LAN.",
+    "choices": [{
+        "answear": "a router with two Ethernet interfaces",
+        "istrue": false
+      },
+      {
+        "answear": "a switch with two Ethernet interfaces",
+        "istrue": false
+      },
+      {
+        "answear": "a router with one Ethernet and one serial interface",
+        "istrue": true
+      },
+      {
+        "answear": "a switch with one Ethernet and one serial interface",
+        "istrue": false
+      },
+      {
+        "answear": "a router with one Ethernet and one modem interface",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which transport layer protocol provides best-effort delivery service with no acknowledgment receipt required?",
+    "explanation": "UDP provides a connectionless datagram service that offers best-effort delivery, which means that UDP does not guarantee delivery or verify sequencing for any datagrams. A source host that needs reliable communication must use either TCP or a program that provides its own sequencing and acknowledgment services.",
+    "choices": [{
+        "answear": "HTTP",
+        "istrue": false
+      },
+      {
+        "answear": "IP",
+        "istrue": false
+      },
+      {
+        "answear": "TCP",
+        "istrue": false
+      },
+      {
+        "answear": "Telnet",
+        "istrue": false
+      },
+      {
+        "answear": "UDP",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Which layer of the OSI model controls the reliability of communications between network devices using flow control, sequencing and acknowledgments?",
+    "explanation": "",
+    "choices": [{
+        "answear": "Physical",
+        "istrue": false
+      },
+      {
+        "answear": "Data-link",
+        "istrue": false
+      },
+      {
+        "answear": "Transport",
+        "istrue": true
+      },
+      {
+        "answear": "Network",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "type":"icnd1",
+    "numberOfAnswers": 2,
+    "name": "Which statements are true regarding ICMP packets?",
+    "explanation": "Ping may be used to find out whether the local machines are connected to the network or whether a remote site is reachable. This tool is a common network tool for determining the network connectivity, which uses ICMP protocol instead of TCP/IP and UDP/IP. This protocol is usually associated with the network management tools, which provide network information to network administrators, such as ping and traceroute (the later also uses the UDP/IP protocol). ICMP is quite different from the TCP/IP and UDP/IP protocols. No source and destination ports are included in its packets. Therefore, usual packet-filtering rules for TCP/IP and UDP/IP are not applicable. Fortunately, a special \"signature\" known as the packet’s Message type is included for denoting the purposes of the ICMP packet. Most commonly used message types are namely, 0, 3, 4, 5, 8, 11, and 12 which represent echo reply, destination unreachable, source quench, redirect, echo request, time exceeded, and parameter problem respectively. In the ping service, after receiving the ICMP \"echo request\" packet from the source location, the destination",
+    "choices": [{
+        "answear": "They acknowledge receipt of TCP segments.",
+        "istrue": false
+      },
+      {
+        "answear": "They guarantee datagram delivery.",
+        "istrue": false
+      },
+      {
+        "answear": "TRACERT uses ICMP packets.",
+        "istrue": true
+      },
+      {
+        "answear": "They are encapsulated within IP datagrams.",
+        "istrue": true
+      },
+      {
+        "answear": "They are encapsulated within UDP datagrams.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "type":"icnd1",
+    "numberOfAnswers": 3,
+    "name": "Which statements accurately describe CDP?",
+    "explanation": "CDP (Cisco Discovery Protocol) is a proprietary protocol designed by Cisco to help administrators collect information about both locally attached and remote devices. By using CDP, you can gather hardware and protocol information about neighbor devices containing useful info for troubleshooting and documenting the network.",
+    "choices": [{
+        "answear": "CDP is an IEEE standard protocol.",
+        "istrue": false
+      },
+      {
+        "answear": "CDP is a Cisco proprietary protocol.",
+        "istrue": true
+      },
+      {
+        "answear": "CDP is a datalink layer protocol.",
+        "istrue": true
+      },
+      {
+        "answear": "CDP is a network layer protocol.",
+        "istrue": false
+      },
+      {
+        "answear": "CDP can discover directly connected neighboring Cisco devices.",
+        "istrue": true
+      },
+      {
+        "answear": "CDP can discover Cisco devices that are not directly connected.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "How does a switch differ from a hub?",
+    "explanation": "Some of the features and functions of a switch include: A switch is essentially a fast, multi-port bridge, which can contain dozens of ports. Rather than creating two collision domains, each port creates its own collision domain. In a network of twenty nodes, twenty collision domains exist if each node is plugged into its own switch port. If an uplink port is included, one switch creates twenty-one single-node collision domains. A switch dynamically builds and maintains a Content-Addressable Memory (CAM) table, holding all of the necessary MAC information for each port. For a detailed description of how switches operate, and their key differences to hubs, see the reference link below. Reference: http://www.cisco.com/warp/public/473/lan-switch-cisco.shtml",
+    "choices": [{
+        "answear": "A switch does not induce any latency into the frame transfer time.",
+        "istrue": false
+      },
+      {
+        "answear": "A switch tracks MAC addresses of directly-connected devices.",
+        "istrue": true
+      },
+      {
+        "answear": "A switch operates at a lower, more efficient layer of the OSI model.",
+        "istrue": false
+      },
+      {
+        "answear": "A switch decreases the number of broadcast domains.",
+        "istrue": false
+      },
+      {
+        "answear": "A switch decreases the number of collision domains.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "What must occur before a workstation can exchange HTTP packets with a web server?",
+    "explanation": "HTTP uses TCP port 80, and a TCP port 80 connection must be established for HTTP communication to occur. http://pentestlab.wordpress.com/2012/03/05/common-tcpip-ports/",
+    "choices": [{
+        "answear": "A UDP connection must be established between the workstation and its default gateway.",
+        "istrue": false
+      },
+      {
+        "answear": "A UDP connection must be established between the workstation and the web server.",
+        "istrue": false
+      },
+      {
+        "answear": "A TCP connection must be established between the workstation and its default gateway.",
+        "istrue": false
+      },
+      {
+        "answear": "A TCP connection must be established between the workstation and the web server.",
+        "istrue": true
+      },
+      {
+        "answear": "An ICMP connection must be established between the workstation and its default gateway.",
+        "istrue": false
+      },
+      {
+        "answear": "An ICMP connection must be established between the workstation and the web server.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "type":"icnd1",
+    "numberOfAnswers": 2,
+    "name": "How does TCP differ from UDP?",
+    "explanation": "Because TCP is a connection-oriented protocol responsible for ensuring the transfer of a datagram from the source to destination machine (end-to-end communications), TCP must receive communications messages from the destination machine to acknowledge receipt of the datagram. The term virtual circuit is usually used to refer to the handshaking that goes on between the two end machines, most of which are simple acknowledgment messages (either confirmation of receipt or a failure code) and datagram sequence numbers. Rather than impose a state within the network to support the connection, TCP uses synchronized state between the two endpoints. This synchronized state is set up as part of an initial connection process, so TCP can be regarded as a connection-oriented protocol. Much of the protocol design is intended to ensure that each local state transition is communicated to, and acknowledged by, the remote party. Reference: http://en.wikibooks.org/wiki/Communication_Networks/TCP_and_UDP_Protocols",
+    "choices": [{
+        "answear": "TCP provides best effort delivery.",
+        "istrue": false
+      },
+      {
+        "answear": "TCP provides synchronized communication.",
+        "istrue": true
+      },
+      {
+        "answear": "TCP segments are essentially datagrams.",
+        "istrue": false
+      },
+      {
+        "answear": "TCP provides sequence numbering of packets.",
+        "istrue": true
+      },
+      {
+        "answear": "TCP uses broadcast delivery.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "A workstation has just resolved a browser URL to the IP address of a server. What protocol will the workstation now use to determine the destination MAC address to be placed into frames directed toward the server?",
+    "explanation": "The RARP protocol is used to translate hardware interface addresses to protocol addresses. The RARP message format is very similar to the ARP format. When the booting computer sends the broadcast ARP request, it places its own hardware address in both the sending and receiving fields in the encapsulated ARP data packet. The RARP server will fill in the correct sending and receiving IP addresses in its response to the message. This way the booting computer will know its IP address when it gets the message from the RARP server.",
+    "choices": [{
+        "answear": "HTTP",
+        "istrue": false
+      },
+      {
+        "answear": "DNS",
+        "istrue": false
+      },
+      {
+        "answear": "DHCP",
+        "istrue": false
+      },
+      {
+        "answear": "RARP",
+        "istrue": false
+      },
+      {
+        "answear": "ARP",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "Host A is sending a packet to Host B for the first time. What destination MAC address will Host A use in the ARP request?",
+    "explanation": "For the initial communication, Host A will send a broadcast ARP (all F's) to determine the correct address to use to reach the destination. ARP sends an Ethernet frame called an ARP request to every host on the shared link-layer legmen. The Ethernet header includes the source host MAC address and a destination address of all Fs representing a broadcast frame. The ARP request contains the sender's MAC and IP address and the target (destination) IP address. The target's MAC address is set to all 0s. ARP Request. Reference: http://www.technicalhowto.com/protocols/arp/arp.html",
+    "choices": [{
+        "answear": "192.168.0.1",
+        "istrue": false
+      },
+      {
+        "answear": "172.16.0.50",
+        "istrue": false
+      },
+      {
+        "answear": "00-17-94-61-18-b0",
+        "istrue": false
+      },
+      {
+        "answear": "00-19-d3-2d-c3-b2",
+        "istrue": false
+      },
+      {
+        "answear": "ff-ff-ff-ff-ff-ff",
+        "istrue": true
+      },
+      {
+        "answear": "255.255.255.255",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "type":"icnd1",
+    "numberOfAnswers": 2,
+    "name": "What are two common TCP applications?",
+    "explanation": "SMTP uses TCP port 25, while FTP uses TCP ports 20 and 21. Reference: http://pentestlab.wordpress.com/2012/03/05/common-tcpip-ports/",
+    "choices": [{
+        "answear": "TFTP",
+        "istrue": false
+      },
+      {
+        "answear": "SMTP",
+        "istrue": true
+      },
+      {
+        "answear": "SNMP",
+        "istrue": false
+      },
+      {
+        "answear": "FTP",
+        "istrue": true
+      },
+      {
+        "answear": "DNS",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "SwitchA receives the frame with the addressing shown. According to the command output also shown in the exhibit, how will SwitchA handle this frame?",
+    "explanation": "Switches keep the learned MAC addresses in a table, so that when a frame comes in with a destination MAC address that the switch has already learned, it will forward it to that port only. If a frame comes in with a destination MAC that is not already in the MAC address table, then the frame will be flooded to all ports except for the one that it came in on. In this case, Switch A already knows that 00b0.d0da.cb56 resides on port fa0/6, so it will forward the from out that port.",
+    "choices": [{
+        "answear": "It will drop the frame.",
+        "istrue": false
+      },
+      {
+        "answear": "It will forward the frame out port Fa0/6 only.",
+        "istrue": true
+      },
+      {
+        "answear": "It will flood the frame out all ports.",
+        "istrue": false
+      },
+      {
+        "answear": "It will flood the frame out all ports except Fa0/3.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "SwitchA receives the frame with the addressing shown in the exhibit. According to the command output also shown in the exhibit, how will SwitchA handle this frame?",
+    "explanation": "When frame receives the frame, it checks the source address on MAC table if MAC address found in MAC table it tries to forward if not in MAC table adds the Address on MAC table. After checking the source address, it checks the destination address on MAC table, if MAC address found on MAC table it forwards to proper ports otherwise floods on all ports except the source port.",
+    "choices": [{
+        "answear": "It will drop the frame.",
+        "istrue": false
+      },
+      {
+        "answear": "It will forward the frame out port Fa0/6 only.",
+        "istrue": false
+      },
+      {
+        "answear": "It will forward the frame out port Fa0/3 only.",
+        "istrue": false
+      },
+      {
+        "answear": "It will flood the frame out all ports.",
+        "istrue": false
+      },
+      {
+        "answear": "It will flood the frame out all ports except Fa0/3.",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "The exhibit is showing the topology and the MAC address table. Host A sends a data frame to host D. What will the switch do when it receives the frame from host A?",
+    "explanation": "When switch receives the data frame from the host not having the MAC address already on the MAC table, it will add the MAC address to source port on MAC address table and sends the data frame.",
+    "choices": [{
+        "answear": "The switch will add the source address and port to the MAC address table and forward the frame to host D.",
+        "istrue": true
+      },
+      {
+        "answear": "The switch will discard the frame and send an error message back to host A.",
+        "istrue": false
+      },
+      {
+        "answear": "The switch will flood the frame out of all ports except for port Fa0/3.",
+        "istrue": false
+      },
+      {
+        "answear": "The switch will add the destination address of the frame to the MAC address table and forward the frame to host D.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "type":"icnd1",
+    "numberOfAnswers": 2,
+    "name": "Which two statements describe the operation of the CSMA/CD access method?",
+    "explanation": "Ethernet networking uses Carrier Sense Multiple Access with Collision Detect (CSMA/CD), a protocol that helps devices share the bandwidth evenly without having two devices transmit at the same time on the network medium. CSMA/CD was created to overcome the problem of those collisions that occur when packets are transmitted simultaneously from different nodes. And trust me, good collision management is crucial, because when a node transmits in a CSMA/CD network, all the other nodes on the network receive and examine that transmission. Only bridges and routers can effectively prevent a transmission from propagating throughout the entire network! So, how does the CSMA/CD protocol work? Like this: when a host wants to transmit over the network, it first checks for the presence of a digital signal on the wire. If all is clear (no other host is transmitting), the host will then proceed with its transmission. But it doesn’t stop there. The transmitting host constantly monitors the wire to make sure no other hosts begin transmitting. If the host detects another signal on the wire, it sends out an extended jam signal that causes all nodes on the segment to stop sending data (think, busy signal). The nodes respond to that jam signal by waiting a while before attempting to transmit again. Backoff algorithms determine when the colliding stations can retransmit. If collisions keep occurring after 15 tries, the nodes attempting to transmit will then time out.",
+    "choices": [{
+        "answear": "In a CSMA/CD collision domain, multiple stations can successfully transmit data simultaneously.",
+        "istrue": false
+      },
+      {
+        "answear": "In a CSMA/CD collision domain, stations must wait until the media is not in use before transmitting.",
+        "istrue": true
+      },
+      {
+        "answear": "The use of hubs to enlarge the size of collision domains is one way to improve the operation of the CSMA/CD access method.",
+        "istrue": false
+      },
+      {
+        "answear": "After a collision, the station that detected the collision has first priority to resend the lost data.",
+        "istrue": false
+      },
+      {
+        "answear": "After a collision, all stations run a random backoff algorithm. When the backoff delay period has expired, all stations have equal priority to transmit data.",
+        "istrue": true
+      },
+      {
+        "answear": "After a collision, all stations involved run an identical backoff algorithm and then synchronize with each other prior to transmitting data.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "type":"icnd1",
+    "numberOfAnswers": 3,
+    "name": "A network has been planned as shown. Which three statements accurately describe the areas and devices in the network plan?",
+    "explanation": "Switches use a separate collision domain for each port, so device A must be a switch. Hubs, however, place all ports in the same collision domain so device B is a hub. Switches reside in layer 2 while hubs are layer 1 devices.",
+    "choices": [{
+        "answear": "Network Device A is a switch.",
+        "istrue": true
+      },
+      {
+        "answear": "Network Device B is a switch.",
+        "istrue": false
+      },
+      {
+        "answear": "Network Device A is a hub.",
+        "istrue": false
+      },
+      {
+        "answear": "Network Device B is a hub.",
+        "istrue": true
+      },
+      {
+        "answear": "Area 1 contains a Layer 2 device.",
+        "istrue": true
+      },
+      {
+        "answear": "Area 2 contains a Layer 2 device.",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "On a Cisco switch, which protocol determines if an attached VoIP phone is from Cisco or from another vendor?",
+    "explanation": "The Cisco Unified IP Phone uses CDP to communicate information such as auxiliary VLAN ID, per port power management details, and Quality of Service (QoS) configuration information with the Cisco Catalyst switch. Cisco Discovery Protocol (CDP) is a proprietary protocol designed by Cisco to help administrators collect information about both locally attached and remote devices. By using CDP, you can gather hardware and protocol information about neighbor devices, which is useful info for troubleshooting the network. CDP messages are generated every 60 seconds as multicast messages on each of its active interfaces. The information shared in a CDP packet about a Cisco device includes the following: Name of the device configured with the hostname command IOS software version Hardware capabilities, such as routing, switching, and/or bridging Hardware platform, such as 2600, 2950, or 1900 The layer-3 address(es) of the device The interface the CDP update was generated on Reference: http://computernetworkingnotes.com/cisco-devices-administration-andconfiguration/ cisco-discoveryprotocol.html",
+    "choices": [{
+        "answear": "RTP",
+        "istrue": false
+      },
+      {
+        "answear": "TCP",
+        "istrue": false
+      },
+      {
+        "answear": "CDP",
+        "istrue": true
+      },
+      {
+        "answear": "UDP",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "What must be configured to establish a successful connection from Host A to switch SW-A through router RT-A?",
+    "explanation": "In order for the switch to reach networks that are not local, such as networks attached to different interfaces of the router, it will need to set its default gateway to be the IP address of the attached router.",
+    "choices": [{
+        "answear": "VLAN 1 on RT-A",
+        "istrue": false
+      },
+      {
+        "answear": "IP routing on SW-A",
+        "istrue": false
+      },
+      {
+        "answear": "default gateway on SW-A",
+        "istrue": true
+      },
+      {
+        "answear": "crossover cable connecting SW-A and RT-A",
+        "istrue": false
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "type":"icnd1",
+    "numberOfAnswers": 1,
+    "name": "At which layer of the OSI model does the protocol that provides the information that is displayed by the show cdp neighbors command operate?",
+    "explanation": "CDP is a device discovery protocol that runs over Layer 2 (the data link layer) on all Ciscomanufactured devices (routers, bridges, access servers, and switches) and allows network management applications to discover Cisco devices that are neighbors of already known devices. With CDP, network management applications can learn the device type and the Simple Network Management Protocol (SNMP) agent address of neighboring devices running lower-layer, transparent protocols. CDP allows devices to share basic configuration information without even configuring any protocol specific information and is enabled by default on all interfaces. CDP is a Datalink Protocol occurring at Layer 2 of the OSI model. CDP is not routable and can only go over to directly connected devices. CDP is enabled, by default, on all Cisco devices. CDP updates are generated as multicasts every 60 seconds with a hold-down period of 180 seconds for a missing neighbor. The no cdp run command globally disables CDP, while the no cdp enable command disables CDP on an interface. Use show cdp neighbors to list out your directly connected Cisco neighboring devices. Adding the detail parameter will display the layer-3 addressing configured on the neighbor. Reference: http://computernetworkingnotes.com/cisco-devices-administration-andconfiguration/ cisco-discoveryprotocol.html",
+    "choices": [{
+        "answear": "application",
+        "istrue": false
+      },
+      {
+        "answear": "transport",
+        "istrue": false
+      },
+      {
+        "answear": "network",
+        "istrue": false
+      },
+      {
+        "answear": "physical",
+        "istrue": false
+      },
+      {
+        "answear": "data link",
+        "istrue": true
+      }
+    ]
+  }
+
+]

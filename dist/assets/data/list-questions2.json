@@ -1,0 +1,60 @@
+[{
+    "id": "1",
+    "numberOfAnswers": 3,
+    "name": "Which three statements are true about the operation of a full-duplex Ethernet network?",
+    "explanation": "Half-duplex Ethernet is defined in the original 802.3 Ethernet and Cisco says you only use one wire pair with a digital signal running in both directions on the wire. It also uses the CSMA/CD protocol to help prevent collisions and to permit retransmitting if a collision does occur. If a hub is attached to a switch, it must operate in half-duplex mode because the end stations must be able to detect collisions. Half-duplex Ethernet—typically 10BaseT—is only about 30 to 40 percent efficient as Cisco sees it, because a large 10BaseT network will usually only give you 3- to 4Mbps—at most. Full-duplex Ethernet uses two pairs of wires, instead of one wire pair like half duplex. Also, full duplex uses a point-to-point connection between the transmitter of the transmitting device and the receiver of the receiving device, which means that with full-duplex data transfer, you get a faster data transfer compared to half duplex. And because the transmitted data is sent on a different set of wires than the received data, no collisions occur. The reason you don’t need to worry about collisions is because now Full-duplex Ethernet is like a freeway with multiple lanes instead of the single-lane road provided by half duplex. Full-duplex Ethernet is supposed to offer 100 percent efficiency in both directions; this means you can get 20Mbps with a 10Mbps Ethernet running full duplex, or 200Mbps for FastEthernet.",
+    "choices": [{
+        "answear": "There are no collisions in full-duplex mode.",
+        "istrue": true
+      },
+      {
+        "answear": "A dedicated switch port is required for each full-duplex node.",
+        "istrue": true
+      },
+      {
+        "answear": "Ethernet hub ports are preconfigured for full-duplex mod.",
+        "istrue": false
+      },
+      {
+
+        "answear": "In a full-duplex environment, the host network card must check for the availability of the network media before transmitting.",
+        "istrue": false
+      },
+      {
+        "answear": "The host network card and the switch port must be capable of operating in full-duplex mode.",
+        "istrue": true
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "numberOfAnswers": 1,
+    "name": "Which OSI layer header contains the address of a destination host that is on another network?",
+    "explanation": "Only network address contains this information. To transmit the packets the sender uses network address and datalink address. But the layer 2 address represents just the address of the next hop device on the way to the sender. It is changed on each hop. Network address remains the same. ",
+    "choices": [{
+        "answear": "application",
+        "istrue": false
+      },
+      {
+        "answear": "session ",
+        "istrue": false
+      },
+      {
+        "answear": "transport ",
+        "istrue": false
+      },
+      {
+        "answear": "network ",
+        "istrue": true
+      },
+      {
+        "answear": "data link",
+        "istrue": false
+      },
+      {
+        "answear": "physical ",
+        "istrue": false
+      }
+    ]
+  }
+]
